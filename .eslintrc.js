@@ -15,6 +15,7 @@ const config = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -24,7 +25,13 @@ const config = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "jsx-a11y", "@typescript-eslint", "unused-imports"],
+  plugins: [
+    "react",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "unused-imports",
+    "prettier",
+  ],
   rules: {
     "react/self-closing-comp": "error",
     "react/prop-types": "off",
